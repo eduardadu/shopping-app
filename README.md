@@ -1,23 +1,30 @@
-# Welcome to Remix!
+# Frontend Challenge - Project Overview
 
-- 📖 [Remix docs](https://remix.run/docs)
+This app was built as part of a frontend challenge. Due to time constraints, some aspects were left incomplete or could be improved:
 
-## Notes
+## To-Do List
 
-This app was made as a frontend challenge.
-Due do the time restrictions there are a couple things that were left to do:
+- **Error Handling & Empty States**
+  - Implement better handling for empty fields (e.g., when the cart is empty or no products are available on the homepage).
+- **Tailwind Configuration**
+  - Define specific Tailwind sizes in the `tailwind.config.js` file instead of using arbitrary values between brackets.
+- **Navigation Modularity**
+  - Refactor navigation-related logic into dedicated functions to improve modularity and maintainability.
+- **Animations & Transitions**
+  - Add animations and smoother transitions (e.g., image loading effects) to enhance user experience.
+- **Project Structure & Organization**
+  - Reorganize files by feature (e.g., create a dedicated folder for the shopping cart and its utilities).
+- **Shopping Cart Components**
+  - Create reusable components for the shopping cart page to improve code maintainability.
 
-- Very specific tailwind sizes that should be specified in the tailwind.config were left untreated
-- Some functions could be created regarding the 'navigate' features to sustain modularity
-- Implement animations and smoother transitions and loadings (of images for example)
-- Reorganize folders and files by feature for example a folder for shopping cart and its utils etc...
-- Lacking time, I did not make components for the shopping cart page
+## Design & Implementation Decisions
 
-Reasoning for some of the decisions made in the implementation
-
-- There isn't a component for buttons and inputs as they were only used once
-- I noticed there was a mix of use between black and the the blue color frist, with more time I would try to match everything
-- Took some liberty with the responsiveness of the website (for example on wrapping and flexible sizing on the product grid etc..)
+- **No General Button/Input Components**
+  - Since buttons and inputs were only used once, separate components were not created for them.
+- **Color Inconsistencies**
+  - The project currently has a mix of black and blue as primary colors. With more time, the color scheme would be unified.
+- **Responsive Design Choices**
+  - Some liberties were taken regarding responsiveness, such as flexible sizing and wrapping in the product grid.
 
 ## Development
 
