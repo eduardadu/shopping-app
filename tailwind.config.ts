@@ -17,6 +17,9 @@ export default {
         ],
       },
     },
+    colors: {
+      "main-blue": "#1F3044",
+    },
   },
   plugins: [],
 } satisfies Config;

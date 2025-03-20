@@ -1,0 +1,79 @@
+/* Main Classes */
+
+.custom-checkbox[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  display: block;
+  min-width: 18px;
+  height: 18px;
+  content: "";
+  background: #fff;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.custom-checkbox[type="radio"]:before {
+  position: relative;
+  display: block;
+  top: 0px;
+  width: 18px;
+  height: 18px;
+  border: 1px solid black;
+  content: "";
+  background: #fff;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.custom-checkbox[type="radio"]:after {
+  position: relative;
+  display: block;
+  width: 18px;
+  height: 18px;
+  top: -18px;
+  border: 1px solid black;
+  content: "";
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: none;
+  border-radius: 2px;
+}
+
+.custom-checkbox[type="radio"]:checked:after {
+  text-align: center;
+  vertical-align: middle;
+  content: "x";
+  font-size: 15px;
+  line-height: 15px;
+  border-radius: 2px;
+}
+
+select {
+  appearance: none;
+  /* for Firefox */
+  -moz-appearance: none;
+  /* for Chrome */
+  -webkit-appearance: none;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+}
+
+.gridItem {
+}
+
+/* Media query for screens wider than 1600px */
+@media (min-width: 1600px) {
+  .grid {
+    grid-template-columns: repeat(
+      4,
+      1fr
+    ); /* Change to 4 columns for large screens */
+  }
+}
